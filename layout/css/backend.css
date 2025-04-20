@@ -1,0 +1,527 @@
+/* Start Main Rules */
+
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+}
+
+/* Add Asterisk On Required Field */
+input[required] + .asterisk {
+  font-size: 20px;
+  color: rgb(203, 29, 29);
+  position: absolute;
+  right: 19px;
+  top: 7px;
+}
+
+/* Adjust input container for relative positioning */
+.form-group .col-sm-9,
+.row .col-sm-9 {
+  position: relative;
+  /* padding: 0; */
+}
+
+/* End Main Rules */
+
+/* Start Bootstrap Edits */
+
+.bg-primary {
+  background-color: #000 !important;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.dropdown-toggle {
+  background-color: #3498db;
+  color: #fff !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 13px 12px;
+}
+
+.dropdown-menu {
+  right: 0;
+  /* top: 38px !important; */
+  margin-top: 0px !important;
+  padding: 0;
+  background-color: #3498db;
+  border-radius: 0px 0px 8px 8px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dropdown-item {
+  color: #fff;
+  font-weight: 500;
+  padding: 9px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #000000 !important;
+  background-color: #ffffff;
+}
+
+.dropdown-item:focus,
+.last:hover {
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* End Bootstrap Edits */
+
+/* Start Dashboard Page */
+
+.home-stats .stat {
+  background-color: #eee;
+  border: 1px none #ccc;
+  border-radius: 7px;
+  padding: 20px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+}
+
+.home-stats .stat a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-stats .stat span {
+  display: block;
+  font-size: 50px;
+  margin-top: -5px;
+}
+
+.row {
+  margin-top: 31px;
+  margin-bottom: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* border-radius: 7px; */
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.st-members {
+  background-color: #3498db !important;
+}
+
+.st-pending {
+  background-color: #c0392b !important;
+}
+
+.st-items {
+  background-color: #d35400 !important;
+}
+
+.st-comments {
+  background-color: #8e44ad !important;
+}
+
+.latest-users {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.latest-users li {
+  padding: 5px 0;
+  overflow: hidden;
+  padding: 8px 8px;
+}
+
+.latest-users li:nth-child(odd) {
+  background-color: #eee;
+  padding: 8px 8px;
+}
+
+.latest-users .btn-success,
+.btn-activate {
+  padding: 2px 5px;
+  font-size: 13px;
+}
+
+.btn-activate {
+  margin-right: 5px;
+  margin-top: 0 !important;
+}
+
+.card-header-plus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-plus-home,
+.fa-minus {
+  color: #aaa7a7;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.fa-minus {
+  transform: rotate(180deg);
+}
+
+.fa-users-card {
+  color: white;
+  font-size: 70px;
+}
+
+.stat {
+  position: relative;
+  overflow: hidden;
+  padding: 18px;
+}
+
+.fa-users-card {
+  position: absolute;
+  left: 37px;
+  top: 33px;
+}
+
+.content-card {
+  float: right;
+  margin-right: 12px;
+}
+
+.home-cards {
+  display: block; /* Ensure the element can be transformed */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*   Smooth transition for transform and shadow */
+  transform: scale(1); /* Default scale is 1 */
+  text-decoration: none;
+}
+
+.comment-box {
+  margin: 5px 0 10px;
+  display: flex;
+}
+
+.comment-box .member-name,
+.comment-box .member-comment {
+  float: left;
+}
+
+.comment-box .member-name {
+  width: 80px;
+  text-align: center;
+  margin-right: 20px;
+  position: relative;
+  top: 6px;
+}
+
+.comment-box .member-comment {
+  width: calc(100% - 100px);
+  background-color: #efefef;
+  padding: 10px;
+  position: relative;
+}
+
+.comment-box .member-comment::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -28px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #efefef transparent transparent;
+  border-width: 15px;
+}
+
+/* Hover state of the cards */
+.home-cards:hover {
+  transform: scale(1.05); /* Scale up slightly */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.c-btn {
+  margin-left: 101px;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.edit-btn-c {
+  margin-right: 5px;
+}
+
+.approve-btn-c {
+  margin-top: 0 !important;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .fa-users-card {
+    position: absolute;
+    left: 9px;
+    top: 37px;
+  }
+
+  .content-card {
+    margin-right: -9px;
+  }
+
+  .fa-users-card {
+    color: white;
+    font-size: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fa-users-card {
+    position: absolute;
+    left: 9px;
+    top: 37px;
+  }
+
+  .content-card {
+    margin-right: 0;
+    float: none;
+  }
+
+  .fa-users-card {
+    display: none;
+  }
+
+  .home-stats .stat {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container,
+  .container-sm {
+    max-width: 663px;
+  }
+
+  .home-stats .stat {
+    margin-bottom: 6px;
+  }
+
+  .card-1,
+  .card-2 {
+    margin-bottom: 26px;
+    margin-top: -14px;
+  }
+
+  .row-1 {
+    margin-top: 31px;
+  }
+
+  .row-2 {
+    margin-bottom: 20px;
+    margin-top: -23px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .row-1 {
+    margin-bottom: 9px;
+  }
+}
+
+/* End Dashboard Page */
+
+/* Start Members page */
+h1 {
+  font-size: 51px;
+  margin-bottom: 29px;
+  margin-top: 32px;
+}
+
+.btn-primary {
+  margin-top: 4px;
+}
+
+.col-form-label {
+  font-weight: 700;
+}
+
+.text-danger {
+  /* margin-left: 103px; */
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-danger {
+    margin-left: 103px;
+    margin-bottom: 0;
+    width: 79%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .text-danger {
+    margin-left: 91px;
+    margin-bottom: 0;
+    width: 78%;
+  }
+}
+
+.success-message,
+.warning-alert {
+  max-width: 70%;
+  margin: 21px auto;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  opacity: 1;
+  transition: opacity 0.5s ease-out, display 0s 0.5s;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.table-btn {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.table-btn .fa-user-plus {
+  margin-right: 9px;
+}
+
+.btn-danger {
+  margin-left: 10px;
+}
+
+.btn-active {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.main-table {
+  background-color: #fff;
+}
+
+.table-responsive {
+  overflow-x: unset;
+}
+
+/* End Members page */
+
+/* Start Category Page */
+.card-line {
+  position: relative;
+}
+.card-line:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 97%;
+  height: 1.2px;
+  background-color: #e4e1e1;
+  bottom: 0;
+  right: 27px;
+}
+
+.visibility,
+.commenting,
+.advertises {
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-right: 7px;
+  font-weight: 500;
+}
+
+.visibility {
+  background-color: #d35400;
+}
+
+.commenting {
+  background-color: #2c3e50;
+}
+
+.advertises {
+  background-color: #c0392b;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons .btn-primary,
+.buttons .btn-danger {
+  margin-left: 5px;
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ordering {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-cat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header .ordering a {
+  color: #000; /* Default color is black */
+}
+
+.card-header .ordering a.active {
+  color: #f00; /* Red for active arrow */
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.btn-cat {
+  margin-top: 15px;
+}
+
+.cat-btn {
+  margin-bottom: 10px;
+}
+
+/* End Category Page */
+
+/* Start Items Page */
+
+.form-select {
+  margin-bottom: 0 !important;
+}
+
+.btn-item {
+  margin-bottom: 20px;
+}
+
+/* End Items Page */
+
+/* Start Comment */
+.comment-area {
+  width: 100%;
+}
+
+.textarea {
+  height: 126px !important;
+}
+/* End Comment */
